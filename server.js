@@ -44,10 +44,10 @@ console.log(` ${key}: ${value}`);
 
 console.log('-----------------------------');
 res.send('<h2>POST request received!</h2><pre>' + JSON.stringify(req.body, null,
-3) + '</pre>');
+2) + '</pre>');
 });
 
 
-app.listen(3030, () => {
-console.log('Server running on http://localhost:3030');
+app.listen(3000, () => {
+console.log('Server running on http://localhost:3000');
 });
