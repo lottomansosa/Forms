@@ -9,9 +9,11 @@
     <h1>Our Current Users</h1>
     <ul>
     <% 
-        let users = locals.users;
+        let counter = 0;
+        //let users = locals.users;
         for (user of users){ %>
-            <li><%= user.firstName %> </li>
+            <li><a href="/users/<%=counter%>"><%= user.firstName %> <%= user.lastName %></a> </li>
+            <%counter++%>
 
         <% } %>
         </ul>
